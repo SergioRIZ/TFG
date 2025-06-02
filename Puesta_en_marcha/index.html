@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Puesta en Marcha de Empresa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .step-section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-number {
+            background: rgba(255,255,255,0.2);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .step-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .step-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        
+        .step-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step-icon {
+            width: 25px;
+            height: 25px;
+            background: #3498db;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .step-card p {
+            color: #555;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            color: #721c24;
+        }
+        
+        .obligatorio {
+            background: #d4edda;
+            color: #155724;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3498db;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #3498db;
+        }
+        
+        @media (max-width: 768px) {
+            .step-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Guía para Puesta en Marcha de Empresa</h1>
+            <p>Pasos esenciales para iniciar tu actividad empresarial</p>
+        </div>
+        
+        <div class="content">
+            <!-- TRÁMITES FISCALES -->
+            <div class="step-section">
+                <div class="section-title">
+                    <div class="section-number">1</div>
+                    💰 Trámites Fiscales y Tributarios
+                </div>
+                
+                <div class="step-grid">
+                    <div class="step-card">
+                        <h3><div class="step-icon">📝</div>Alta en Censo de Empresarios <span class="obligatorio">OBLIGATORIO</span></h3>
+                        <p><strong>Modelo:</strong> 036 (empresas) / 037 (autónomos)</p>
+                        <p><strong>Cuándo:</strong> Antes del inicio de la actividad</p>
+                        <div class="highlight">Marcar casilla 111 solo si es tu primera actividad empresarial</div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">🏢</div>Impuesto sobre Actividades Económicas</h3>
+                        <p><strong>Exención:</strong> Los 2 primeros ejercicios</p>
+                        <div class="warning">No puede superar el 15% de los beneficios de la actividad</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGURIDAD SOCIAL -->
+            <div class="step-section">
+                <div class="section-title">
+                    <div class="section-number">2</div>
+                    👥 Seguridad Social y Trabajadores
+                </div>
+                
+                <div class="step-grid">
+                    <div class="step-card">
+                        <h3><div class="step-icon">📋</div>Afiliación de Trabajadores <span class="obligatorio">OBLIGATORIO</span></h3>
+                        <p><strong>Modelo:</strong> TA.1</p>
+                        <p>Para trabajadores no afiliados al sistema de Seguridad Social</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">🏭</div>Inscripción de la Empresa</h3>
+                        <p><strong>Modelo:</strong> TA.7 (por cada provincia)</p>
+                        <p><strong>Objetivo:</strong> Obtener Código de Cuenta de Cotización (CCC)</p>
+                        <div class="highlight">Necesario para contratar trabajadores</div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">✅</div>Alta de Trabajadores</h3>
+                        <p><strong>Modelo:</strong> TA2/S (Régimen General)</p>
+                        <p>Dar de alta a todos los trabajadores contratados</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <h3><div class="step-icon">📄</div>Documentación Requerida para Inscripción (TA.6)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">• Documento identificativo del titular</div>
+                        <div class="timeline-item">• NIF con actividad económica</div>
+                        <div class="timeline-item">• Escritura de constitución de la empresa</div>
+                        <div class="timeline-item">• Fotocopia DNI del firmante</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTRO DE TRABAJO -->
+            <div class="step-section">
+                <div class="section-title">
+                    <div class="section-number">3</div>
+                    🏢 Centro de Trabajo y Contratos
+                </div>
+                
+                <div class="step-grid">
+                    <div class="step-card">
+                        <h3><div class="step-icon">📢</div>Comunicación de Apertura del Centro</h3>
+                        <p><strong>Datos empresa:</strong> Razón social, domicilio, CIF, actividad</p>
+                        <p><strong>Datos centro:</strong> Ubicación, nº trabajadores, superficie, maquinaria</p>
+                        <div class="highlight">Obligatorio para cualquier actividad empresarial</div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">📅</div>Calendario Laboral</h3>
+                        <p>Obtener y mostrar en la empresa</p>
+                        <p><strong>Renovación:</strong> Anual</p>
+                        <p><strong>Fuente:</strong> Página de la Seguridad Social</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">📋</div>Alta Contratos de Trabajo</h3>
+                        <p>Registrar en SEPE los contratos de trabajadores por cuenta ajena</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEGAL Y ADMINISTRATIVO -->
+            <div class="step-section">
+                <div class="section-title">
+                    <div class="section-number">4</div>
+                    ⚖️ Aspectos Legales y Administrativos
+                </div>
+                
+                <div class="step-grid">
+                    <div class="step-card">
+                        <h3><div class="step-icon">®️</div>Registro de Signos Distintivos</h3>
+                        <p>Registrar marca en la Oficina Española de Patentes y Marcas</p>
+                        <div class="highlight">Protección jurídica de tu marca</div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">🏛️</div>Licencias de Actividad</h3>
+                        <p><strong>Dónde:</strong> Ayuntamiento de la localidad</p>
+                        <p>Necesaria para iniciar la actividad empresarial</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">🔐</div>Certificado Electrónico</h3>
+                        <p>Validación de firma electrónica</p>
+                        <p>Contiene: Nombre, NIF, algoritmos, fecha expiración</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIBROS CONTABLES -->
+            <div class="step-section">
+                <div class="section-title">
+                    <div class="section-number">5</div>
+                    📚 Libros Contables y Societarios
+                </div>
+                
+                <div class="step-grid">
+                    <div class="step-card">
+                        <h3><div class="step-icon">📖</div>Libros Societarios (Art. 26 Código Comercio)</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">• Libro de Actas</div>
+                            <div class="timeline-item">• Libro Registro de Socios</div>
+                            <div class="timeline-item">• Libro Registro de Acciones Nominativas</div>
+                            <div class="timeline-item">• Libro Registro de Contratos (socio único)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><div class="step-icon">💼</div>Libros Contables (Art. 27)</h3>
+                        <p><strong>Obligatorios:</strong></p>
+                        <div class="timeline">
+                            <div class="timeline-item">• Libro Diario</div>
+                            <div class="timeline-item">• Libro de Inventarios y Cuentas Anuales</div>
+                        </div>
+                        <div class="warning">Presentar ante el Registro Mercantil</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
