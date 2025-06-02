@@ -7,245 +7,539 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>👥 Estructura Organizacional</h1>
-            <p>Distribución de personal y costos salariales</p>
+    <div class="company-overview">
+        EMPRESA: 10 SOCIOS + 14 EMPLEADOS DISTRIBUIDOS EN 4 DEPARTAMENTOS
+    </div>
+
+    <div class="total-summary">
+        RESUMEN TOTAL: Salarios Base: 311.635€ | SS y Beneficios (30%): 93.490,5€ | TOTAL ANUAL: 405.125,5€
+    </div>
+
+    <div class="department-title">DEPARTAMENTO DE TECNOLOGÍA (6 EMPLEADOS)</div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Arquitecto de IA</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Definir la estrategia arquitectónica, establecer los flujos de trabajo, identificar los conjuntos de herramientas y dimensionar las operaciones de IA</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Tecnología</div>
         </div>
         
-        <div class="content">
-            <!-- RESUMEN GENERAL -->
-            <div class="org-overview">
-                <h3>📊 Resumen Organizacional</h3>
-                <div class="overview-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">10</div>
-                        <div class="stat-label">Socios</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">14</div>
-                        <div class="stat-label">Empleados</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Departamentos</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">24</div>
-                        <div class="stat-label">Total Personas</div>
-                    </div>
-                </div>
-            </div>
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">50.216€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Ingeniería Informática, Especialización en IA</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">7 años en desarrollo de sistemas de IA</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Liderazgo técnico, pensamiento estratégico, conocimientos avanzados en ML/AI</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Innovador, analítico, orientado a resultados</div>
+        </div>
+    </div>
 
-            <!-- DEPARTAMENTO DE TECNOLOGÍA -->
-            <div class="department tech">
-                <div class="department-title">
-                    <span class="department-icon">💻</span>
-                    Departamento de Tecnología
-                    <span class="employee-count">6 empleados</span>
-                </div>
-                <table class="employee-table">
-                    <thead>
-                        <tr>
-                            <th>Puesto</th>
-                            <th>Salario Anual</th>
-                            <th>Responsabilidades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="position">Arquitecto de IA</td>
-                            <td class="salary">50.216€</td>
-                            <td class="responsibilities">Definir la estrategia arquitectónica, establecer flujos de trabajo, identificar conjuntos de herramientas y dimensionar las operaciones de IA.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Desarrollador Backend (1)</td>
-                            <td class="salary">28.521€</td>
-                            <td class="responsibilities">Realizar operaciones CRUD en datos estructurados almacenados, implementar la lógica empresarial y gestionar las APIs.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Desarrollador Backend (2)</td>
-                            <td class="salary">28.521€</td>
-                            <td class="responsibilities">Realizar operaciones CRUD en datos estructurados almacenados, implementar la lógica empresarial y gestionar las APIs.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Desarrollador Frontend</td>
-                            <td class="salary">25.021€</td>
-                            <td class="responsibilities">Encargarse de la interfaz de usuario que los usuarios ven y con la que interactúan.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Especialista en ML</td>
-                            <td class="salary">31.023€</td>
-                            <td class="responsibilities">Permitir que las máquinas aprendan por sí mismas, sin necesidad de programar cada paso.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Especialista en Ciberseguridad</td>
-                            <td class="salary">42.309€</td>
-                            <td class="responsibilities">Desarrollar algoritmos y modelos que detecten y mitiguen amenazas cibernéticas.</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="department-summary">
-                            <td><strong>Subtotal Tecnología</strong></td>
-                            <td class="salary total"><strong>205.611€</strong></td>
-                            <td><strong>6 empleados especializados en desarrollo y seguridad</strong></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Desarrollador Backend (2 puestos)</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Realizar operaciones CRUD en datos estructurados almacenados, implementar la lógica empresarial y gestionar las APIs</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Tecnología</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">28.521€ anuales cada uno (57.042€ total)</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Ingeniería Informática, Desarrollo de Aplicaciones</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">3 años en desarrollo backend</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Programación en múltiples lenguajes, bases de datos, APIs REST</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Colaborativo, metodico, exigente</div>
+        </div>
+    </div>
 
-            <!-- DEPARTAMENTO ADMINISTRATIVO -->
-            <div class="department admin">
-                <div class="department-title">
-                    <span class="department-icon">📊</span>
-                    Departamento Administrativo
-                    <span class="employee-count">3 empleados</span>
-                </div>
-                <table class="employee-table">
-                    <thead>
-                        <tr>
-                            <th>Puesto</th>
-                            <th>Salario Anual</th>
-                            <th>Responsabilidades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="position">Administrador (1)</td>
-                            <td class="salary">21.390€</td>
-                            <td class="responsibilities">Elaborar los modelos correspondientes que tenga que entregar la empresa y gestionar el reparto de salarios.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Administrador (2)</td>
-                            <td class="salary">23.002€</td>
-                            <td class="responsibilities">Elaborar los modelos correspondientes que tenga que entregar la empresa y gestionar el reparto de salarios.</td>
-                        </tr>
-                        <tr>
-                            <td class="position">Recepcionista</td>
-                            <td class="salary">17.589€</td>
-                            <td class="responsibilities">Atender llamadas telefónicas y realizar tareas ofimáticas generales.</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="department-summary">
-                            <td><strong>Subtotal Administrativo</strong></td>
-                            <td class="salary total"><strong>61.981€</strong></td>
-                            <td><strong>3 empleados de gestión y administración</strong></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Desarrollador Frontend</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Encargarse de la interfaz de los usuarios que estos ven y con la que interactúan</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Tecnología</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">25.021€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Desarrollo de Aplicaciones Web, Diseño Web o similar</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">2 años en desarrollo frontend</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">HTML, CSS, JavaScript, frameworks modernos (React, Vue, Angular)</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Creativo, orientado a la experiencia de usuario, detallista</div>
+        </div>
+    </div>
 
-            <!-- DEPARTAMENTO DE MARKETING Y VENTAS -->
-            <div class="department marketing">
-                <div class="department-title">
-                    <span class="department-icon">📈</span>
-                    Departamento de Marketing y Ventas
-                    <span class="employee-count">1 empleado</span>
-                </div>
-                <table class="employee-table">
-                    <thead>
-                        <tr>
-                            <th>Puesto</th>
-                            <th>Salario Anual</th>
-                            <th>Responsabilidades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="position">Comercial</td>
-                            <td class="salary">30.043€ + comisiones</td>
-                            <td class="responsibilities">Dar a conocer el producto moviéndose entre empresas y contactando con influencers para promoción.</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="department-summary">
-                            <td><strong>Subtotal Marketing</strong></td>
-                            <td class="salary total"><strong>30.043€</strong></td>
-                            <td><strong>1 empleado comercial (+ comisiones variables)</strong></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Especialista en Machine Learning</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Permitir que las máquinas aprendan por sí mismas, sin necesidad de programar cada paso</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Tecnología</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">31.023€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Matemáticas, Estadística, Ingeniería Informática con especialización en ML</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">3 años en proyectos de Machine Learning</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Python, R, TensorFlow, PyTorch, análisis estadístico</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Analítico, curioso, orientado a la experimentación</div>
+        </div>
+    </div>
 
-            <!-- DEPARTAMENTO PRL -->
-            <div class="department prl">
-                <div class="department-title">
-                    <span class="department-icon">🦺</span>
-                    Departamento de Prevención de Riesgos Laborales
-                    <span class="employee-count">1 empleado</span>
-                </div>
-                <table class="employee-table">
-                    <thead>
-                        <tr>
-                            <th>Puesto</th>
-                            <th>Salario Anual</th>
-                            <th>Responsabilidades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="position">Técnico en PRL</td>
-                            <td class="salary">27.236€</td>
-                            <td class="responsibilities">Profesional experimentado y cualificado en prevención de riesgos laborales, garantizando la seguridad en el entorno de trabajo.</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="department-summary">
-                            <td><strong>Subtotal PRL</strong></td>
-                            <td class="salary total"><strong>27.236€</strong></td>
-                            <td><strong>1 empleado especializado en seguridad laboral</strong></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Especialista en Ciberseguridad</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Desarrollar algoritmos y modelos que detecten y mitiguen amenazas cibernéticas</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Tecnología</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">42.309€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Ingeniería Informática con especialización en Ciberseguridad</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">4 años en seguridad informática</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Análisis de vulnerabilidades, sistemas de detección</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Trabajo en equipo, proactivo, orientado a la prevención</div>
+        </div>
+    </div>
 
-            <!-- RESUMEN TOTAL -->
-            <div class="total-summary">
-                <h3>💰 Resumen Financiero Total</h3>
-                <div class="summary-grid">
-                    <div class="summary-item">
-                        <h4>324.871€</h4>
-                        <p>Salarios Brutos Anuales</p>
-                    </div>
-                    <div class="summary-item">
-                        <h4>97.461€</h4>
-                        <p>Seguridad Social (30%)</p>
-                    </div>
-                    <div class="summary-item">
-                        <h4>422.332€</h4>
-                        <p>Costo Total Anual</p>
-                    </div>
-                    <div class="summary-item">
-                        <h4>35.194€</h4>
-                        <p>Costo Mensual Promedio</p>
-                    </div>
-                </div>
-                
-                <div class="breakdown">
-                    <h4>📋 Desglose por Departamento</h4>
-                    <div class="breakdown-item">
-                        <span>Tecnología (6 empleados)</span>
-                        <span>205.611€ (63.3%)</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span>Administrativo (3 empleados)</span>
-                        <span>61.981€ (19.1%)</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span>Marketing y Ventas (1 empleado)</span>
-                        <span>30.043€ (9.2%)</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span>PRL (1 empleado)</span>
-                        <span>27.236€ (8.4%)</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span><strong>TOTAL + SS (30%)</strong></span>
-                        <span><strong>422.332€</strong></span>
-                    </div>
-                </div>
-            </div>
+    <div class="department-title">DEPARTAMENTO ADMINISTRATIVO (3 EMPLEADOS)</div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Administrador</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Elaborar los modelos correspondientes que tenga que entregar la empresa y del reparto de salarios</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Administrativo</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">23.002€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Administración y Finanzas, Económicas o similar</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">3 años en administración empresarial</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Gestión financiera, elaboración de informes, nóminas</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Organizado, responsable, orientado al detalle</div>
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Administrador</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Elaborar los modelos correspondientes que tenga que entregar la empresa y del reparto de salarios</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Administrativo</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">21.390€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Administración y Finanzas</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">2 años en tareas administrativas</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Ofimática, organización documental, atención al detalle</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Colaborativo, puntual, orientado al aprendizaje</div>
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Recepcionista</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Atender llamadas y tareas ofimáticas</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Administrativo</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">17.589€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">FP Administrativo</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">Experiencia en atención al cliente o recepción</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Comunicación telefónica, ofimática básica, Bilingue</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Amable, comunicativo, orientado al servicio</div>
+        </div>
+    </div>
+
+    <div class="department-title">DEPARTAMENTO DE MARKETING Y VENTAS (1 EMPLEADO)</div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Comercial</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Dar a conocer el producto moviéndose entre empresas y contactando con influencers</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Marketing y Ventas</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">30.043€ anuales + comisiones</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales + desplazamientos</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Marketing, Comercio</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">2 años en ventas B2B</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Técnicas de venta, networking, marketing digital</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Persuasivo, extrovertido, perseverante</div>
+        </div>
+    </div>
+
+    <div class="department-title">DEPARTAMENTO DE PREVENCIÓN DE RIESGOS LABORALES (1 EMPLEADO)</div>
+
+    <div class="job-card">
+        <div class="section-header">DESCRIPCIÓN DEL PUESTO DE TRABAJO</div>
+        <div class="field-row">
+            <div class="field-label">Nombre del puesto:</div>
+            <div class="field-content">Técnico Superior en Prevención de Riesgos Laborales</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Funciones y tareas principales:</div>
+            <div class="field-content">Implementar y supervisar las medidas de prevención de riesgos laborales, realizar evaluaciones de riesgos, formar a empleados y garantizar el cumplimiento normativo</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Departamento:</div>
+            <div class="field-content">Prevención de Riesgos Laborales</div>
+        </div>
+        
+        <div class="section-header">CONDICIONES LABORALES</div>
+        <div class="field-row">
+            <div class="field-label">Horario:</div>
+            <div class="field-content">Jornada completa</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Salario:</div>
+            <div class="field-content"><span class="salary-highlight">27.236€ anuales</span></div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Tipo de contrato:</div>
+            <div class="field-content">Indefinido</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Jornada de trabajo:</div>
+            <div class="field-content">40 horas semanales</div>
+        </div>
+        
+        <div class="section-header">PERFIL PROFESIONAL</div>
+        <div class="field-row">
+            <div class="field-label">Formación:</div>
+            <div class="field-content">Técnico Superior en PRL</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Experiencia profesional:</div>
+            <div class="field-content">5 años como técnico en PRL en empresas del sector tecnológico</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Aptitudes:</div>
+            <div class="field-content">Evaluación de riesgos, normativa PRL, formación</div>
+        </div>
+        <div class="field-row">
+            <div class="field-label">Actitudes:</div>
+            <div class="field-content">Responsable, comunicativo y proactivo en seguridad</div>
         </div>
     </div>
 </body>
