@@ -1,0 +1,165 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .level {
+            margin-bottom: 40px;
+        }
+
+        .level-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #34495e;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .founders-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .departments-grid {
+            display: block;
+        }
+
+        .department {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .department-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tech-dept { background-color: #3498db; color: white; }
+        .admin-dept { background-color: #27ae60; color: white; }
+        .sales-dept { background-color: #e74c3c; color: white; }
+        .prl-dept { background-color: #f39c12; color: white; }
+
+        .employee-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .founder-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+        }
+
+        .manager-box {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            font-weight: bold;
+        }
+
+        .employee-name {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .employee-position {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .employee-salary {
+            font-size: 12px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .connection-line {
+            height: 20px;
+            border-left: 2px solid #34495e;
+            margin: 0 auto;
+            width: 2px;
+        }
+
+        .summary {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .summary-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .founders-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .departments-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .summary-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
