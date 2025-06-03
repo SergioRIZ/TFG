@@ -3,315 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Inversión y Financiación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .header {
-            display: flex;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        
-        .header-section {
-            flex: 1;
-            padding: 15px 20px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-            border-right: 2px solid rgba(255,255,255,0.3);
-        }
-        
-        .header-section:last-child {
-            border-right: none;
-        }
-        
-        .content {
-            display: flex;
-        }
-        
-        .section {
-            flex: 1;
-            border-right: 2px solid #e0e0e0;
-        }
-        
-        .section:last-child {
-            border-right: none;
-        }
-        
-        .row {
-            display: flex;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .row:last-child {
-            border-bottom: 2px solid #667eea;
-        }
-        
-        .cell {
-            flex: 1;
-            padding: 12px 20px;
-            border-right: 2px solid #e0e0e0;
-            background-color: #f9f9f9;
-        }
-        
-        .cell:last-child {
-            border-right: none;
-            text-align: right;
-            font-weight: bold;
-            background-color: white;
-        }
-        
-        .total-row .cell {
-            background-color: #667eea;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        .arrow {
-            text-align: center;
-            padding: 10px;
-            font-size: 24px;
-            color: #667eea;
-        }
-        
-        .breakdown {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-        }
-        
-        .breakdown h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-        }
-        
-        .breakdown-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breakdown-item:last-child {
-            border-bottom: none;
-            font-weight: bold;
-            margin-top: 10px;
-            padding-top: 10px;
-        }
-    </style>
+    <title>Modelos Fiscales para Sociedades</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="header-section">PLAN DE INVERSIÓN</div>
+            <h1>📊 Modelos Fiscales para Sociedades</h1>
+            <p>Guía completa de obligaciones tributarias en España</p>
         </div>
         
         <div class="content">
-            <div class="section" style="border-right: none;">
-                <div class="row">
-                    <div class="cell">Local (primer año)</div>
-                    <div class="cell">120.000€</div>
+            <!-- IMPUESTO SOBRE SOCIEDADES -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">🏢</span>
+                    Impuesto sobre Sociedades
                 </div>
-                <div class="row">
-                    <div class="cell">Equipo informático</div>
-                    <div class="cell">17.191€</div>
-                </div>
-                <div class="row">
-                    <div class="cell">Instalaciones (luz, agua)</div>
-                    <div class="cell">7.440€</div>
-                </div>
-                <div class="row">
-                    <div class="cell">Mobiliario</div>
-                    <div class="cell">8.380€</div>
-                </div>
-                <div class="row">
-                    <div class="cell">Gastos de Constitución</div>
-                    <div class="cell">15.800€</div>
-                </div>
-                <div class="row">
-                    <div class="cell">Provisión de fondos</div>
-                    <div class="cell">300.000€</div>
-                </div>
-                <div class="row total-row">
-                    <div class="cell">TOTAL</div>
-                    <div class="cell">468.811€</div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">200</div>
+                            <div class="model-title">Declaración del IS</div>
+                        </div>
+                        <div class="model-description">
+                            Declaración anual del Impuesto sobre Sociedades. Refleja el resultado de la empresa y el importe a abonar a Hacienda.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Declaración anual</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Contenido:</span>
+                                <span class="detail-value">Resultado empresarial e importe a pagar</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Obligatorio:</span>
+                                <span class="detail-value">Todas las sociedades</span>
+                            </div>
+                        </div>
+                        <div class="frequency annual">📅 ANUAL</div>
+                        <div class="important-note">
+                            <strong>Plazo:</strong> 25 días posteriores al sexto mes después del cierre del ejercicio fiscal.
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">202</div>
+                            <div class="model-title">Pago Fraccionado del IS</div>
+                        </div>
+                        <div class="model-description">
+                            Utilizado para los pagos fraccionados del IS. Permite declarar los pagos a cuenta que las empresas realizan durante el año.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Pago a cuenta</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Finalidad:</span>
+                                <span class="detail-value">Fraccionamiento del pago del IS</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Obligatorio:</span>
+                                <span class="detail-value">Sociedades con beneficios</span>
+                            </div>
+                        </div>
+                        <div class="frequency quarterly">📅 TRIMESTRAL</div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">222</div>
+                            <div class="model-title">Declaración Consolidada</div>
+                        </div>
+                        <div class="model-description">
+                            Para grupos de sociedades que pueden presentar una declaración consolidada del Impuesto sobre Sociedades.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Declaración grupal</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Aplicable:</span>
+                                <span class="detail-value">Grupos de sociedades</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Requisitos:</span>
+                                <span class="detail-value">Cumplir condiciones específicas</span>
+                            </div>
+                        </div>
+                        <div class="frequency annual">📅 ANUAL</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="arrow">↑</div>
-    </div>
 
-    <div class="container" style="margin-top: 30px;">
-        <div class="header">
-            <div class="header-section">PLAN DE FINANCIACIÓN</div>
-        </div>
-        
-        <div class="content">
-            <div class="section" style="border-right: none;">
-                <div class="row">
-                    <div class="cell">Recursos propios</div>
-                    <div class="cell">300.060€</div>
+            <!-- RETENCIONES E INGRESOS -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">💰</span>
+                    Retenciones e Ingresos a Cuenta
                 </div>
-                <div class="row">
-                    <div class="cell">Préstamo bancario</div>
-                    <div class="cell">100.000€</div>
-                </div>
-                <div class="row">
-                    <div class="cell">Subvención</div>
-                    <div class="cell">218.157€</div>
-                </div>
-                <div class="row total-row">
-                    <div class="cell">TOTAL</div>
-                    <div class="cell">618.217€</div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">111</div>
+                            <div class="model-title">Retenciones Empleados</div>
+                        </div>
+                        <div class="model-description">
+                            Retenciones e ingresos a cuenta sobre rendimientos del trabajo, actividades económicas y premios.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Concepto:</span>
+                                <span class="detail-value">Salarios de empleados</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Obligatorio:</span>
+                                <span class="detail-value">Empresas con trabajadores</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Plazo:</span>
+                                <span class="detail-value">Hasta el 20 del mes siguiente</span>
+                            </div>
+                        </div>
+                        <div class="frequency quarterly">📅 TRIMESTRAL</div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">115</div>
+                            <div class="model-title">Retenciones Proveedores</div>
+                        </div>
+                        <div class="model-description">
+                            Retenciones e ingresos a cuenta sobre rendimientos de actividades profesionales y otros conceptos.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Concepto:</span>
+                                <span class="detail-value">Pagos a profesionales</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Aplicable:</span>
+                                <span class="detail-value">Servicios profesionales</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Porcentaje:</span>
+                                <span class="detail-value">Variable según actividad</span>
+                            </div>
+                        </div>
+                        <div class="frequency quarterly">📅 TRIMESTRAL</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="arrow">↑</div>
-    </div>
-    
-    <div class="breakdown">
-        <h3>📊 Desglose Detallado de Equipos Informáticos</h3>
-        <div class="breakdown-item">
-            <span>1x PcCom Work Intel Core i5-12400 / 32GB / 1TB SSD + Windows 11</span>
-            <span>579€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>1x PcCom Essential MK20 Combo Teclado + Ratón Wireless</span>
-            <span>14€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>1x Alurin CoreVision 100IPSLite 23.8" FHD 100Hz</span>
-            <span>80€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>10x Logitech Desktop MK120 Combo Teclado y Ratón</span>
-            <span>180€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>10x MSI PRO MP225 21.5" LED IPS FullHD 100Hz</span>
-            <span>790€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>10x HP OmniDesk Slim Desktop S03-0002ns Intel Core i3</span>
-            <span>3.990€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>1x Impresora Láser Wi-Fi Canon i-SENSYS MF842Cdw</span>
-            <span>1.168€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>10x Portátil Apple Macbook Air M4</span>
-            <span>10.390€</span>
-        </div>
-        <div class="breakdown-item">
-            <span><strong>TOTAL EQUIPOS INFORMÁTICOS</strong></span>
-            <span><strong>17.191€</strong></span>
-        </div>
-    </div>
-    
-    <div class="breakdown">
-        <h3>🪑 Desglose Detallado de Mobiliario</h3>
-        <div class="breakdown-item">
-            <span>10x HomCom Escritorio en Forma de L</span>
-            <span>990€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>10x HomCom Silla de Oficina Ergonómica</span>
-            <span>675€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>1x Juego mesa conferencia ANJA360 + 14 sillas MARINA</span>
-            <span>2.236€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>1x Recepción Mostrador Odom 120cm</span>
-            <span>179€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>4x Conjunto de Baño completo Hoxton</span>
-            <span>4.300€</span>
-        </div>
-        <div class="breakdown-item">
-            <span><strong>TOTAL MOBILIARIO</strong></span>
-            <span><strong>8.380€</strong></span>
-        </div>
-    </div>
-    
-    <div class="breakdown">
-        <h3>💡 Desglose de Instalaciones (Primer Año)</h3>
-        <div class="breakdown-item">
-            <span>Electricidad (150 kW contratados - 500€/mes)</span>
-            <span>6.000€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Agua (120€/mes)</span>
-            <span>1.440€</span>
-        </div>
-        <div class="breakdown-item">
-            <span><strong>TOTAL INSTALACIONES ANUALES</strong></span>
-            <span><strong>7.440€</strong></span>
-        </div>
-    </div>
 
-    <div class="breakdown">
-        <h3>🏦 Desglose del Préstamo Bancario</h3>
-        <div class="breakdown-item">
-            <span>Importe del préstamo</span>
-            <span>100.000€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Plazo de devolución</span>
-            <span>6 años</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Tipo de interés anual</span>
-            <span>5,5%</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Cuota mensual aproximada</span>
-            <span>1.650€</span>
-        </div>
-        <div class="breakdown-item">
-            <span><strong>TOTAL A DEVOLVER (6 años)</strong></span>
-            <span><strong>118.600€</strong></span>
-        </div>
-    </div>
+            <!-- IVA -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">🧾</span>
+                    Impuesto sobre el Valor Añadido (IVA)
+                </div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">303</div>
+                            <div class="model-title">Liquidación Periódica IVA</div>
+                        </div>
+                        <div class="model-description">
+                            Autoliquidación trimestral del IVA. Declara el IVA repercutido, soportado y el importe resultante.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Liquidación periódica</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Contenido:</span>
+                                <span class="detail-value">IVA repercutido vs soportado</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Obligatorio:</span>
+                                <span class="detail-value">Empresas sujetas a IVA</span>
+                            </div>
+                        </div>
+                        <div class="frequency quarterly">📅 TRIMESTRAL</div>
+                    </div>
 
-    <div class="breakdown">
-        <h3>💰 Análisis Financiero</h3>
-        <div class="breakdown-item">
-            <span>Inversión inicial necesaria</span>
-            <span>341.371€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Total financiación disponible</span>
-            <span>618.217€</span>
-        </div>
-        <div class="breakdown-item">
-            <span>Excedente financiero</span>
-            <span>276.846€</span>
-        </div>
-        <div class="breakdown-item">
-            <span><strong>CAPITAL DE TRABAJO ADICIONAL</strong></span>
-            <span><strong>276.846€</strong></span>
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">390</div>
+                            <div class="model-title">Resumen Anual IVA</div>
+                        </div>
+                        <div class="model-description">
+                            Declaración anual resumen del IVA. Recoge la información de todas las declaraciones trimestrales del año.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Declaración resumen</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Contenido:</span>
+                                <span class="detail-value">Consolidación anual</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Plazo:</span>
+                                <span class="detail-value">Hasta el 30 de enero</span>
+                            </div>
+                        </div>
+                        <div class="frequency annual">📅 ANUAL</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DECLARACIONES INFORMATIVAS -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">📋</span>
+                    Declaraciones Informativas
+                </div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div class="model-number">347</div>
+                            <div class="model-title">Operaciones con Terceros</div>
+                        </div>
+                        <div class="model-description">
+                            Declaración informativa de operaciones con terceras personas. Obligatoria cuando se supera el umbral establecido.
+                        </div>
+                        <div class="model-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tipo:</span>
+                                <span class="detail-value">Declaración informativa</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Finalidad:</span>
+                                <span class="detail-value">Control fiscal</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Plazo:</span>
+                                <span class="detail-value">Hasta el 28 de febrero</span>
+                            </div>
+                        </div>
+                        <div class="frequency annual">📅 ANUAL</div>
+                        <div class="threshold">
+                            <strong>Umbral:</strong> Operaciones superiores a 3.005,06€ anuales con un mismo cliente o proveedor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESUMEN CALENDARIO -->
+            <div class="calendar-section">
+                <div class="calendar-title">📅 Calendario Fiscal Anual</div>
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <div class="summary-number">7</div>
+                        <div class="summary-label">Modelos Fiscales</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-number">4</div>
+                        <div class="summary-label">Trimestrales</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-number">3</div>
+                        <div class="summary-label">Anuales</div>
+                    </div>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-item">
+                        <div class="calendar-month">Enero</div>
+                        <div class="calendar-models">Modelo 111, 115 (4º T)<br>Modelo 303 (4º T)</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="calendar-month">Febrero</div>
+                        <div class="calendar-models">Modelo 347<br>Modelo 390</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="calendar-month">Abril</div>
+                        <div class="calendar-models">Modelo 111, 115 (1er T)<br>Modelo 303 (1er T)</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="calendar-month">Julio</div>
+                        <div class="calendar-models">Modelo 111, 115 (2º T)<br>Modelo 303 (2º T)<br>Modelo 200, 202</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="calendar-month">Octubre</div>
+                        <div class="calendar-models">Modelo 111, 115 (3er T)<br>Modelo 303 (3er T)</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
