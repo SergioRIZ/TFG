@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Costes - Empresa de IA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .table-container {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        .header {
+            background-color: #666;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+        }
+        
+        .subheader {
+            background-color: #888;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .item {
+            background-color: #f9f9f9;
+            border-left: 3px solid #ccc;
+        }
+        
+        .amount {
+            text-align: right;
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+        
+        .total {
+            background-color: #888;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .total-amount {
+            background-color: #888;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        /* Estilos para la cuenta de P&G */
+        .profit-loss {
+            background-color: #e8e8e8;
+        }
+        
+        .concept {
+            padding: 8px 12px;
+            font-style: italic;
+            color: #555;
+            background-color: #f5f5f5;
+        }
+        
+        .arrow {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            width: 60px;
+        }
+        
+        .calculation {
+            background-color: #f0f0f0;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .result {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+        
+        .negative {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>6.3 Estudio de costes de producción</h2>
+        
+        <!-- Tabla de Costes Fijos -->
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td class="header" colspan="2">COSTES FIJOS</td>
+                </tr>
+                <tr>
+                    <td class="item">Alquiler local (construcción)</td>
+                    <td class="amount">10,000</td>
+                </tr>
+                <tr>
+                    <td class="item">Nóminas (personal)</td>
+                    <td class="amount">33,769</td>
+                </tr>
+                <tr>
+                    <td class="item">Seguridad Social y beneficios</td>
+                    <td class="amount">10,131</td>
+                </tr>
+                <tr>
+                    <td class="item">PRL (Prevención Riesgos)</td>
+                    <td class="amount">2,270</td>
+                </tr>
+                <tr>
+                    <td class="item">Luz (electricidad)</td>
+                    <td class="amount">500</td>
+                </tr>
+                <tr>
+                    <td class="item">Agua</td>
+                    <td class="amount">120</td>
+                </tr>
+                <tr>
+                    <td class="item">Internet y comunicaciones</td>
+                    <td class="amount">100</td>
+                </tr>
+                <tr>
+                    <td class="item">Gastos financieros (préstamo)</td>
+                    <td class="amount">458</td>
+                </tr>
+                <tr>
+                    <td class="total">TOTAL COSTES FIJOS</td>
+                    <td class="total-amount">57,348</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Tabla de Costes Variables -->
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td class="header" colspan="2">COSTES VARIABLES</td>
+                </tr>
+                <tr>
+                    <td class="item">Mantenimiento servidores y cloud</td>
+                    <td class="amount">2,000</td>
+                </tr>
+                <tr>
+                    <td class="item">Licencias software</td>
+                    <td class="amount">500</td>
+                </tr>
+                <tr>
+                    <td class="item">Marketing y publicidad</td>
+                    <td class="amount">1,500</td>
+                </tr>
+                <tr>
+                    <td class="item">Gastos comerciales</td>
+                    <td class="amount">800</td>
+                </tr>
+                <tr>
+                    <td class="total">TOTAL COSTES VARIABLES</td>
+                    <td class="total-amount">4,800</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Cuenta de Pérdidas y Ganancias -->
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td class="header" colspan="4">CUENTA DE PÉRDIDAS Y GANANCIAS</td>
+                </tr>
+                <tr>
+                    <td class="concept">Ingresos por actividad principal</td>
+                    <td class="arrow">⟹</td>
+                    <td class="profit-loss">+ Ingresos de explotación</td>
+                    <td class="amount">0 €</td>
+                </tr>
+                <tr>
+                    <td class="concept">Gastos por actividad principal</td>
+                    <td class="arrow">⟹</td>
+                    <td class="profit-loss">- Gastos de explotación</td>
+                    <td class="calculation">Nóminas + SS + PRL + Servicios</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="profit-loss">(Nóminas + SS + Alquiler + Servicios)</td>
+                    <td class="amount">Total: 46,290 € mensual</td>
+                </tr>
+                <tr style="border-top: 2px solid #666;">
+                    <td class="concept">Beneficios Antes Intereses e Impuestos</td>
+                    <td class="arrow">⟹</td>
+                    <td class="result">RESULTADO DE EXPLOTACIÓN (BAII)</td>
+                    <td class="amount negative">-555,480 €</td>
+                </tr>
+                <tr>
+                    <td class="concept">Intereses</td>
+                    <td class="arrow">⟹</td>
+                    <td class="profit-loss">- Gastos financieros</td>
+                    <td class="amount">Intereses: 5,500 €</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="result">RESULTADO FINANCIERO</td>
+                    <td class="amount negative">(5,500 €)</td>
+                </tr>
+                <tr>
+                    <td class="concept">Beneficio Antes Impuestos</td>
+                    <td class="arrow">⟹</td>
+                    <td class="result">BAI</td>
+                    <td class="amount negative">-560,980 €</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="profit-loss">- Impuesto sobre el beneficio</td>
+                    <td class="amount">0 € (sin beneficios)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="profit-loss">(25% sobre beneficios)</td>
+                    <td class="amount">0 €</td>
+                </tr>
+                <tr style="border-top: 2px solid #666;">
+                    <td class="concept">Beneficio</td>
+                    <td class="arrow">⟹</td>
+                    <td class="result">RESULTADO DEL EJERCICIO</td>
+                    <td class="amount negative">-560,980 €</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Nota explicativa -->
+        <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #ffc107;">
+            <h3 style="color: #856404; margin-top: 0;">Nota sobre el primer año:</h3>
+            <p style="color: #856404; margin-bottom: 0;">
+                Como se indica en el plan, el primer año se dedicará a la creación y estabilización de la IA, 
+                por lo que los ingresos serán prácticamente 0€. La empresa cuenta con una provisión de fondos 
+                de 300.000€ y la posibilidad de solicitar préstamos adicionales si es necesario.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
