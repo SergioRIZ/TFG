@@ -1,0 +1,299 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .dafo-matrix {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .dafo-quadrant {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dafo-quadrant:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .dafo-quadrant::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .strengths::before { background: linear-gradient(90deg, #4CAF50, #45a049); }
+        .weaknesses::before { background: linear-gradient(90deg, #f44336, #d32f2f); }
+        .opportunities::before { background: linear-gradient(90deg, #2196F3, #1976d2); }
+        .threats::before { background: linear-gradient(90deg, #FF9800, #f57c00); }
+
+        .quadrant-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+
+        .quadrant-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .strengths .quadrant-icon { background: linear-gradient(135deg, #4CAF50, #45a049); }
+        .weaknesses .quadrant-icon { background: linear-gradient(135deg, #f44336, #d32f2f); }
+        .opportunities .quadrant-icon { background: linear-gradient(135deg, #2196F3, #1976d2); }
+        .threats .quadrant-icon { background: linear-gradient(135deg, #FF9800, #f57c00); }
+
+        .quadrant-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .quadrant-content {
+            list-style: none;
+        }
+
+        .quadrant-content li {
+            margin-bottom: 12px;
+            padding: 10px;
+            background: rgba(0,0,0,0.03);
+            border-radius: 8px;
+            border-left: 3px solid;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .quadrant-content li:hover {
+            background: rgba(0,0,0,0.08);
+            transform: translateX(5px);
+        }
+
+        .strengths .quadrant-content li { border-left-color: #4CAF50; }
+        .weaknesses .quadrant-content li { border-left-color: #f44336; }
+        .opportunities .quadrant-content li { border-left-color: #2196F3; }
+        .threats .quadrant-content li { border-left-color: #FF9800; }
+
+        .item-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .section-separator {
+            text-align: center;
+            margin: 60px 0 40px 0;
+            position: relative;
+        }
+
+        .section-separator::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .came-matrix {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .came-quadrant {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .came-quadrant:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .came-quadrant::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .corregir::before { background: linear-gradient(90deg, #9C27B0, #7B1FA2); }
+        .afrontar::before { background: linear-gradient(90deg, #E91E63, #C2185B); }
+        .mantener::before { background: linear-gradient(90deg, #00BCD4, #0097A7); }
+        .explotar::before { background: linear-gradient(90deg, #4CAF50, #388E3C); }
+
+        .corregir .quadrant-icon { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
+        .afrontar .quadrant-icon { background: linear-gradient(135deg, #E91E63, #C2185B); }
+        .mantener .quadrant-icon { background: linear-gradient(135deg, #00BCD4, #0097A7); }
+        .explotar .quadrant-icon { background: linear-gradient(135deg, #4CAF50, #388E3C); }
+
+        .corregir .quadrant-content li { border-left-color: #9C27B0; }
+        .afrontar .quadrant-content li { border-left-color: #E91E63; }
+        .mantener .quadrant-content li { border-left-color: #00BCD4; }
+        .explotar .quadrant-content li { border-left-color: #4CAF50; }
+
+        .strategy-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: rgba(0,0,0,0.03);
+            border-radius: 8px;
+            border-left: 3px solid;
+            transition: all 0.3s ease;
+        }
+
+        .strategy-item:hover {
+            background: rgba(0,0,0,0.08);
+            transform: translateX(5px);
+        }
+
+        .strategy-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .strategy-actions {
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .strategy-actions ul {
+            margin: 5px 0 0 15px;
+            padding: 0;
+        }
+
+        .strategy-actions li {
+            margin: 3px 0;
+            padding: 0;
+            background: none;
+            border: none;
+            transform: none;
+            list-style: disc;
+        }
+
+        .strategy-actions li:hover {
+            background: none;
+            transform: none;
+        }
+            .dafo-matrix {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .dafo-quadrant {
+                padding: 20px;
+            }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
