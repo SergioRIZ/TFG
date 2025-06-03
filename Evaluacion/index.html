@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación del Proyecto MainAI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+            transition: transform 0.3s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .metric-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .metric-value {
+            font-size: 1.1em;
+            color: #27ae60;
+        }
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .step {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+            min-width: 120px;
+        }
+        .step-number {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .success-metrics {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .tool-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid #bbdefb;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .process-steps {
+                flex-direction: column;
+            }
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">AI</div>
+            <h1>Evaluación del Proyecto MainAI</h1>
+            <div class="subtitle">Sistema de Seguimiento, Control y Garantía de Calidad</div>
+        </div>
+
+        <section>
+            <h2>7.1. Procedimientos de Seguimiento y Control</h2>
+            
+            <div class="highlight-box">
+                <h3>Metodología de Gestión</h3>
+                <p><strong>Framework:</strong> Scrum adaptado con sprints de 2 semanas</p>
+                
+                <div class="tools-list">
+                    <span class="tool-tag">Jira - Gestión</span>
+                    <span class="tool-tag">GitHub - Código</span>
+                    <span class="tool-tag">Tableau - Métricas</span>
+                    <span class="tool-tag">Slack - Comunicación</span>
+                </div>
+            </div>
+
+            <h3>Gates Críticos del Proyecto</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">Mes 2</div>
+                    <div>Arquitectura Validada</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">Mes 6</div>
+                    <div>MVP Funcional</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">Mes 10</div>
+                    <div>Producto Optimizado</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">Mes 12</div>
+                    <div>Lanzamiento Comercial</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.2. Indicadores de Calidad</h2>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-title">Indicadores Técnicos</div>
+                    <div class="metric-value">
+                        • Precisión memoria: >90%<br>
+                        • Tiempo respuesta: <2seg<br>
+                        • Uptime: >99.5%<br>
+                        • Cobertura testing: >85%
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-title">Indicadores de Producto</div>
+                    <div class="metric-value">
+                        • NPS: >30 (año 1)<br>
+                        • CSAT: >4.0/5.0<br>
+                        • Churn mensual: <5%<br>
+                        • Time to Value: <15min
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-title">Indicadores Financieros</div>
+                    <div class="metric-value">
+                        • MRR: 15K€ → 85K€ (año 1)<br>
+                        • CAC: <45€<br>
+                        • CLV: >120€<br>
+                        • Payback: <3.2 meses
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.3. Gestión de Incidencias</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Tipo</th>
+                        <th>Tiempo Respuesta</th>
+                        <th>Escalación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P0</td>
+                        <td>Crítico</td>
+                        <td>15 minutos</td>
+                        <td>CTO + CEO</td>
+                    </tr>
+                    <tr>
+                        <td>P1</td>
+                        <td>Alto</td>
+                        <td>2 horas</td>
+                        <td>CTO</td>
+                    </tr>
+                    <tr>
+                        <td>P2-P4</td>
+                        <td>Medio-Bajo</td>
+                        <td>8h - 72h</td>
+                        <td>Lead Developer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h3>Protocolo de Resolución</h3>
+                <p><strong>Flujo:</strong> Detección automática → Registro Jira → Resolución → Post-mortem</p>
+                <p><strong>Documentación:</strong> Obligatoria en Confluence para todos los niveles</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.4. Control de Cambios</h2>
+            
+            <div class="highlight-box">
+                <h3>Comité de Control</h3>
+                <p><strong>Miembros:</strong> CEO, CTO, CFO, COO</p>
+                <p><strong>Reuniones:</strong> Semanales + extraordinarias</p>
+                
+                <h3>Proceso de Cambios</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>Propuesta</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>Evaluación</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>Decisión</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>Implementación</div>
+                    </div>
+                </div>
+                
+                <p><strong>Versionado:</strong> Git + Infrastructure as Code</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.5. Documentación Obligatoria</h2>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-title">Documentación Técnica</div>
+                    <div class="metric-value">
+                        • API docs (OpenAPI)<br>
+                        • Architecture decisions<br>
+                        • Security specs<br>
+                        • Deployment guides
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-title">Documentación de Gestión</div>
+                    <div class="metric-value">
+                        • Project charter<br>
+                        • Risk register<br>
+                        • Budget tracking<br>
+                        • Meeting minutes
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-title">Herramientas</div>
+                    <div class="metric-value">
+                        • Confluence (técnica)<br>
+                        • SharePoint (legal/financiera)<br>
+                        • GitHub Wiki (código)<br>
+                        • Google Drive (colaborativa)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.6. Participación de Usuarios</h2>
+            
+            <div class="highlight-box">
+                <h3>Estrategias de Feedback</h3>
+                <p><strong>Cuantitativo:</strong> Encuestas NPS trimestrales, A/B testing continuo</p>
+                <p><strong>Cualitativo:</strong> 10 entrevistas mensuales, focus groups trimestrales</p>
+                
+                <h3>Programa Beta Testing</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">Beta Cerrada</div>
+                        <div>50 usuarios<br>3 meses</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Beta Abierta</div>
+                        <div>500 usuarios<br>2 meses</div>
+                    </div>
+                </div>
+                
+                <div class="tools-list">
+                    <span class="tool-tag">UserVoice</span>
+                    <span class="tool-tag">Hotjar</span>
+                    <span class="tool-tag">Intercom</span>
+                    <span class="tool-tag">Calendly</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7.7. Cumplimiento y Garantía de Calidad</h2>
+            
+            <div class="highlight-box">
+                <h3>Normativas de Cumplimiento</h3>
+                <div class="tools-list">
+                    <span class="tool-tag">GDPR</span>
+                    <span class="tool-tag">ISO 27001</span>
+                    <span class="tool-tag">SOC 2 Type II</span>
+                    <span class="tool-tag">AEPD España</span>
+                </div>
+                
+                <h3>Programa de Auditorías</h3>
+                <p><strong>GDPR:</strong> Semestral | <strong>Penetration Testing:</strong> Trimestral | <strong>Code Audit:</strong> Anual</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>SLA</th>
+                        <th>Objetivo</th>
+                        <th>Método Verificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>99.5% mensual</td>
+                        <td>Monitoring 24/7</td>
+                    </tr>
+                    <tr>
+                        <td>Rendimiento</td>
+                        <td><2seg respuesta</td>
+                        <td>Load testing continuo</td>
+                    </tr>
+                    <tr>
+                        <td>Seguridad</td>
+                        <td>0 vulnerabilidades críticas</td>
+                        <td>Scanning diario</td>
+                    </tr>
+                    <tr>
+                        <td>Escalabilidad</td>
+                        <td>10K usuarios concurrentes</td>
+                        <td>Testing mensual</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <div class="success-metrics">
+                <h2>Métricas de Éxito del Proyecto</h2>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-title">6-12 Meses</div>
+                        <div class="metric-value">
+                            ✓ MVP estable funcional<br>
+                            ✓ 1,000 usuarios registrados<br>
+                            ✓ MRR 50K€ mes 12
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-title">1-3 Años</div>
+                        <div class="metric-value">
+                            ✓ 10K usuarios activos<br>
+                            ✓ ARR 2M€ año 3<br>
+                            ✓ Valoración >20M€
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p><strong>MainAI - Proyecto Final 2025</strong></p>
+            <p>Sergio Roldán Ibáñez | Técnico Superior en Desarrollo de Aplicaciones Web</p>
+        </div>
+    </div>
+</body>
+</html>
